@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>新用户注册</title>
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/jquery.validate.js"></script>
+</head>
+<style>
+    *{
+        text-decoration: none;
+    }
+    form{
+        margin: 50px auto;
+        width: 300px;
+        height: auto;
+        border:1px solid #ccc;
+        border-radius: 5px;
+        position: relative;
+    }
+    span{
+        margin-left: 10px;
+    }
+    h3{
+        text-align: center;
+        line-height: 20px;
+    }
+    input{
+        width: 75%;
+        height:30px;
+        border:1px solid #ccc;
+        border-radius: 5px;
+        margin:10px 0px;
+        padding:2px 5px;
+        outline: none;
+    }
+    input[type='submit']{
+        margin-left:58px;
+        cursor: pointer;
+        letter-spacing: 10px;
+        font-size: 18px;
+    }
+    .box{
+        width: 95%;
+        height: 50px;
+        margin-left: 10px;
+    }
+    .box input{
+        float: left;
+    }
+    .box img{
+        width:137px;
+        float: left;
+        height: 71%;
+        margin-left:20px;
+        margin-top: -11px;
+        border:1px solid #cccccc;
+    }
+    input[type="submit"]{
+        width: 95%;
+        margin-left:10px;
+    }
+    .text{
+        width: 284px;
+        height: 30px;
+        text-align: center;
+        margin-left: 10px;
+        line-height: 30px;
+    }
+    .word{
+        display: block;
+        height: 100%;
+    }
+    .login{
+        color: red;
+    }
+</style>
+<body>
+<form action="index.php?m=index&f=index&a=applycheck" method="post">
+    <h3>新用户注册</h3>
+    <span>用户：</span><input type="text" name="lname" autocomplete="off"><br>
+    <span>密码：</span><input type="text" name="lpass" autocomplete="off" id="lpass"><br>
+    <span>验证：</span><input type="text" name="lpass1" autocomplete="off" ><br>
+    <span>电话：</span><input type="text" name="phone" autocomplete="off" ><br>
+    <span>昵称：</span><input type="text" name="nickname" autocomplete="off" ><br>
+    <span>请输入验证码:</span><br>
+    <div class="box">
+          <input type="text" name="code" autocomplete="off" style="width: 40%"><br>
+          <img src="index.php?m=admir&f=login&a=code" onclick="this.src='index.php?m=admir&f=login&a=code'"  alt="">
+    </div>
+    <input type="submit" value="注册">
+    <div class="text">注册完毕，立即<a href="login.html" class="login">登陆</a></div>
+</form>
+</body>
+</html>
+<script>
+    $("form").validate({
+        rules:{
+            lname:{
+                required:true,
+                minlength:2
+            },
+            lpass:{
+                required:true,
+                minlength:2
+            },
+            lpass1:{
+                required:true,
+                equalTo:"#lpass"
+            }
+
+        },
+        messages:{
+            lname:{
+                required:"用户名必填",
+                minlength:"不得少于2位"
+            },
+            lpass:{
+                required:"密码必填",
+                minlength:"不得少于2位"
+            },
+            lpass1:{
+                required:"请再次输入密码",
+                equalTo:"两次密码输入不一致"
+            }
+        }
+    })
+</script>

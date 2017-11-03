@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>我的收藏</title>
+    <link rel="stylesheet" href="css/iconfont.css">
+    <script src="js/jquery-3.2.1.js"></script>
+</head>
+<style>
+    *{
+        margin:0;
+        padding:0;
+        list-style: none;
+        text-decoration: none;
+    }
+    /*表头*/
+    header{
+        width: 100%;
+        height: 50px;
+    }
+    .float1{
+        width: 100%;
+        height: 50px;
+    }
+    .float{
+        width: 100%;
+        height: 50px;
+        position: fixed;
+        left:0;
+        top:0;
+        border-bottom: 1px solid #cccccc;
+        background: #ffffff;
+    }
+    .logo{
+        width: 50px;
+        height: 100%;
+        position: fixed;
+        left: 50px;
+        top:0px;
+        color: #ff6700;
+        line-height: 50px;
+        font-size: 24px;
+        text-align: center;
+        font-weight: bold;
+    }
+    .inside{
+        width: 960px;
+        height: 100%;
+        margin: 0 auto;
+    }
+    .inside>a{
+        display: block;
+        width: auto;
+        height: 100%;
+        line-height: 50px;
+        color: #ff6700;
+        text-align: center;
+        float: left;
+        margin-left: 30px;
+    }
+    .inside .navigation,.inside .message{
+        color: #000000;
+    }
+    .navigation,.attention,.message{
+        font-family: 'iconfont';
+    }
+    .search{
+        width:210px ;
+        float: left;
+        margin-left: 20px;
+        position: relative;
+    }
+    .search input{
+        width: 200px;
+        height:30px ;
+        border:1px solid #cccccc;
+        border-radius: 20px;
+        outline: none;
+        padding:2px 8px;
+        box-sizing: border-box;
+        float: left;
+        margin:10px 0px;
+    }
+    .search a{
+        display: block;
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        right:12px;
+        top:16px;
+        border-radius: 50%;
+        font-family: 'iconfont';
+        text-align: center;
+        line-height: 20px;
+    }
+    .r-box{
+        width: 160px;
+        height: 100%;
+        position: absolute;
+        top:0;
+        right:56px;
+        display: flex;
+        justify-content: space-around;
+    }
+    .lbox{
+        width: 100px;
+        height: 50px;
+    }
+    .login{
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        border:1px solid #cccccc;
+        box-sizing: border-box;
+        position: relative;
+        margin-top:5px;
+    }
+    .menu{
+        width:100px;
+        height: auto;
+        position: absolute;
+        top:45px;
+        left:0;
+        box-shadow: 0px 2px 3px 1px rgba(0,0,0,.1);
+        background: white;
+        display: none;
+    }
+    .menu>li{
+        width: 100%;
+        height: 20px;
+        background: white;
+        text-align: center;
+        line-height: 20px;
+        font-size: 12px;
+        margin:10px 0px;
+    }
+    .menu>li:hover{
+        background: #ff6700;
+    }
+    .menu>li:hover a{
+        color: #ffffff;
+    }
+    .menu>li a{
+        color: #ff6700;
+    }
+    .sanjiao{
+        width: 0;
+        height: 0;
+        border-top: 4px solid #ff6700;
+        border-bottom: 4px solid transparent;
+        border-right: 4px solid transparent;
+        border-left: 4px solid transparent;
+        position: absolute;
+        right:-5px;
+        top:32px;
+    }
+    .login:hover .sanjiao{
+        transform: rotate(180deg);
+        transition:  all 0.5s;
+    }
+    .write{
+        width: 80px;
+        height: 40px;
+        background: #ff6700;
+        border-radius: 40px;
+        line-height: 40px;
+        text-align: center;
+        margin-top:5px;
+        color: #ffffff;
+        font-family: 'iconfont';
+    }
+    section{
+        width: 690px;
+        height: auto;
+        margin:20px auto;
+    }
+    .collection{
+        width: 100%;
+        height: 110px;
+    }
+    .collection img{
+        width: 100%;
+        height: 100%;
+    }
+    .artical{
+        width: 690px;
+        height:200px;
+        margin:0 auto;
+        border:1px solid #cccccc;
+    }
+    .aleft{
+        width: 480px;
+        height: 100%;
+        float: left;
+        margin-top: 20px;
+    }
+    .information{
+        width: 100%;
+        height: 30px;
+    }
+    .information>li{
+        height: 30px;
+        float: left;
+        margin-left: 20px;
+        line-height: 30px;
+        text-align: center;
+    }
+    .photo img{
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+    }
+    .name{
+        font-size: 14px;
+        color: #222222;
+    }
+    .time{
+        font-size: 14px;
+        color: grey;
+    }
+    .title{
+        width: 100%;
+        font-size: 18px;
+        font-weight: bold;
+        color: #222222;
+        line-height: 24px;
+        padding-left:20px;
+        box-sizing: border-box;
+    }
+    .title a{
+        color: #222222;
+    }
+    .a-con{
+        width: 100%;
+        height: 100px;
+        font-size: 14px;
+        color: grey;
+        line-height: 18px;
+        padding-left: 20px;
+        padding-top: 5px;
+        box-sizing: border-box;
+    }
+    .aright{
+        width: 120px;
+        height: 120px;
+        float: right;
+        margin-top: 39px;
+        margin-right: 10px;
+    }
+    .aright img{
+        width: 100%;
+        height: 100%;
+    }
+</style>
+<body>
+<header>
+    <div class="float1"></div>
+    <div class="float">
+        <div class="logo">杂谈</div>
+        <div class="inside">
+            <a href="platform.html" class="navigation">&#xe735;发现</a>
+            <a href="attention.html" class="attention">&#xe601;关注</a>
+            <a href="message.html" class="message">&#xe6be;消息</a>
+            <div class="search">
+                <input type="text" placeholder="搜索">
+                <a href="">&#xe605;</a>
+            </div>
+        </div>
+        <div class="r-box">
+            <div class="lbox">
+                <div class="login">
+                    <div class="sanjiao"></div>
+                    <ul class="menu">
+                        <li><a href="platform.html">我的主页</a></li>
+                        <li><a href="javascript:;">收藏的文章</a></li>
+                        <li><a href="favorite.html">喜欢的文章</a></li>
+                        <li><a href="zhanghu.html">我的钱包</a></li>
+                        <li><a href="">退出系统</a></li>
+                    </ul>
+                </div>
+            </div>
+            <a href="artical.html" class="write">&#xe635;写文章</a>
+        </div>
+    </div>
+</header>
+<section>
+    <div class="collection"><img src="img/collect.png" alt=""></div>
+</section>
+<div class="artical">
+    <div class="aleft">
+        <ul class="information">
+            <li class="photo">
+                <img src="img/0dca220dd6bb.jpeg" alt="">
+            </li>
+            <li class="name">还做同学</li>
+            <li class="time">2小时前</li>
+        </ul>
+        <ul class="title"><a href="">我终于有钱了，你还愿意爱我吗——读《了不起的盖茨比》</a></ul>
+        <ul class="a-con">01 在我小的时候，熬夜还是一件不常见的事情。那个时候身边的人的作息都十分有规律，
+            唯一需要熬夜的日子只有年关。 然而现在，熬夜似乎已经成了一种生活的常态。 并不是有非要熬夜才...</ul>
+    </div>
+    <div class="aright">
+        <img src="img/tphoto.jpg" alt="">
+    </div>
+</div>
+</body>
+</html>
+<script>
+    $(function(){
+        $(".lbox").hover(function(){
+            $(".menu").css("display","block");
+        },function(){
+            $(".menu").css("display","none");
+        })
+    })
+</script>

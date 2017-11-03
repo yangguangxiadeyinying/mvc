@@ -1,0 +1,62 @@
+*{
+    margin:0;
+    padding:0;
+    text-decoration: none;
+    list-style: none;
+}
+section{
+    width: 690px;
+    height: auto;
+    margin:10px auto;
+}
+table{
+    width: 100%;
+    height: auto;
+    margin:10px auto;
+    border-collapse: collapse;
+}
+td,th{
+    border:1px solid #777777;
+    line-height: 30px;
+    text-align: center;
+}
+th{
+    font-size: 16px;
+    font-weight: bolder;
+    color: #ff6700;
+    line-height: 40px;
+}
+caption{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+input{
+    width: 50px;
+}
+button{
+    outline: none;
+    border:1px solid #cccccc;
+    border-radius: 3px;
+    cursor: pointer;
+    width: 40px;
+    height: 20px;
+}
+a{
+    display: block;
+    width: 210px;
+    height: 20px;
+    text-align: center;
+    margin-left: 445px;
+}
+span{
+    color: red;
+    font-size: 20px;
+}
+.all input{
+    width: 16px;
+    height: 16px;
+}
+.one input{
+    width: 16px;
+    height: 16px;
+}

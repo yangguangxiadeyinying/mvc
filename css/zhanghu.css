@@ -1,0 +1,272 @@
+*{
+    padding:0;
+    margin:0;
+    list-style: none;
+    text-decoration: none;
+}
+header{
+    width: 100%;
+    height: 50px;
+}
+.float1{
+    width: 100%;
+    height: 50px;
+}
+.float{
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    left:0;
+    top:0;
+    border-bottom: 1px solid #cccccc;
+    background: #ffffff;
+}
+.logo{
+    width: 50px;
+    height: 100%;
+    position: fixed;
+    left: 50px;
+    top:0px;
+    color: #ff6700;
+    line-height: 50px;
+    font-size: 24px;
+    text-align: center;
+    font-weight: bold;
+}
+.inside{
+    width: 960px;
+    height: 100%;
+    margin: 0 auto;
+}
+.inside .navigation,.inside .message,.inside .attention,.inside div{
+    display:block;
+    height: 100%;
+    line-height: 50px;
+    color: #ff6700;
+    text-align: center;
+    float: left;
+    margin-left: 30px;
+}
+.inside .attention,.inside .message{
+    color: #000000;
+}
+.navigation,.attention,.message{
+    font-family: 'iconfont';
+}
+.search{
+    position: relative;
+}
+.search input{
+    width: 200px;
+    height:30px ;
+    border:1px solid #cccccc;
+    border-radius: 20px;
+    outline: none;
+    padding:2px 8px;
+    box-sizing: border-box;
+    float: left;
+    margin:10px 0px;
+}
+.search a{
+    display: block;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right:6px;
+    top:15px;
+    border-radius: 50%;
+    font-family: 'iconfont';
+    text-align: center;
+    line-height: 20px;
+}
+.r-box{
+    width: 160px;
+    height: 100%;
+    position: absolute;
+    top:0;
+    right:56px;
+    display: flex;
+    justify-content: space-around;
+}
+.lbox{
+    width: 80px;
+    height: 50px;
+}
+.login{
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border:1px solid #cccccc;
+    box-sizing: border-box;
+    position: relative;
+    margin-top:5px;
+}
+.menu{
+    width:100px;
+    height: auto;
+    position: absolute;
+    top:45px;
+    left:0;
+    box-shadow: 0px 2px 3px 1px rgba(0,0,0,.1);
+    background: white;
+    display: none;
+}
+.menu>li{
+    width: 100%;
+    height: 20px;
+    background: white;
+    text-align: center;
+    line-height: 20px;
+    font-size: 12px;
+    margin:10px 0px;
+}
+.menu>li:hover{
+    background: #ff6700;
+}
+.menu>li:hover a{
+    color: #ffffff;
+}
+.menu>li a{
+    color: #ff6700;
+}
+.sanjiao{
+    width: 0;
+    height: 0;
+    border-top: 4px solid #ff6700;
+    border-bottom: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-left: 4px solid transparent;
+    position: absolute;
+    right:-5px;
+    top:32px;
+}
+.lbox:hover .sanjiao{
+    transform: translateY(-4px) rotate(180deg);
+    transition:  all 0.5s;
+}
+.write{
+    width: 80px;
+    height: 40px;
+    background: #ff6700;
+    border-radius: 40px;
+    line-height: 40px;
+    text-align: center;
+    margin-top:5px;
+    color: #ffffff;
+    font-family: 'iconfont';
+}
+/*标头完*/
+main{
+    width: 960px;
+    height: auto;
+    margin:20px auto;
+}
+.max{
+    width: 100%;
+    height: 160px;
+}
+.first{
+    width: 280px;
+    height: auto;
+    float: left;
+    padding:20px 15px;
+    box-sizing: border-box;
+    border-right: 1px solid #cccccc;
+}
+.photo{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    float: left;
+    border:1px solid #cccccc;
+}
+.info{
+    width:167px ;
+    height: auto;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    float: left;
+}
+.info a{
+    color: #222222;
+}
+.name{
+    font-weight: bold;
+}
+.phone{
+    color: gary;
+    font-size: 16px;
+}
+.second{
+    width: 288px;
+    height: 100px;
+    padding:10px 55px;
+    float: left;
+    border-right: 1px solid #cccccc;
+}
+span{
+    color: grey;
+}
+.money-main{
+    font-size: 20px;
+    color: #ff6700;
+}
+.active{
+    width: 100%;
+    height: 35px;
+    margin-top: 40px;
+
+}
+.top-ups,.withdrawals{
+    display: block;
+    width: 80px;
+    height: 35px;
+    border-radius: 35px;
+    border:1px solid #fcbe94;
+    text-align: center;
+    line-height: 35px;
+    float: left;
+    margin-right: 10px;
+}
+.top-ups{
+    background: #ff6700;
+    color: #FFFFFF;
+}
+.withdrawals{
+    background: #ffffff;
+    color: #ff6700;
+}
+.tip{
+    width: 83px;
+    color: #cccccc;
+    font-size: 12px;
+    margin-top: 18px;
+    float: left;
+}
+.third{
+    font-size: 14px;
+    float: left;
+    width: 200px;
+    height: 92px;
+    padding:20px 40px;
+    color: grey;
+}
+.third a{
+    color: blue;
+}
+table{
+    width: 100%;
+    height: auto;
+    border:1px solid #cccccc;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+td{
+    padding:10px;
+    text-align: center;
+    line-height: 20px;
+    border: 1px solid #cccccc;
+
+}

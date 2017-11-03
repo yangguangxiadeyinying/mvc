@@ -1,0 +1,369 @@
+*{
+    margin:0;
+    padding:0;
+    list-style: none;
+    text-decoration: none;
+}
+header{
+    width: 100%;
+    height: 50px;
+}
+.float1{
+    width: 100%;
+    height: 50px;
+}
+.float{
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    left:0;
+    top:0;
+    border-bottom: 1px solid #cccccc;
+    background: #ffffff;
+}
+.logo{
+    width: 50px;
+    height: 100%;
+    position: fixed;
+    left: 50px;
+    top:0px;
+    color: #ff6700;
+    line-height: 50px;
+    font-size: 24px;
+    text-align: center;
+    font-weight: bold;
+}
+.inside{
+    width: 960px;
+    height: 100%;
+    margin: 0 auto;
+}
+.inside .navigation,.inside .message,.inside .attention,.inside div{
+    display:block;
+    height: 100%;
+    line-height: 50px;
+    color: #ff6700;
+    text-align: center;
+    float: left;
+    margin-right: 30px;
+}
+.inside .attention,.inside .message{
+    color: #000000;
+}
+.navigation,.attention,.message{
+    font-family: 'iconfont';
+}
+.search{
+    position: relative;
+}
+.search input{
+    width: 200px;
+    height:30px ;
+    border:1px solid #cccccc;
+    border-radius: 20px;
+    outline: none;
+    padding:2px 8px;
+    box-sizing: border-box;
+    float: left;
+    margin:10px 0px;
+}
+.search a{
+    display: block;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right:6px;
+    top:15px;
+    border-radius: 50%;
+    font-family: 'iconfont';
+    text-align: center;
+    line-height: 20px;
+}
+.r-box{
+    width: 160px;
+    height: 100%;
+    position: absolute;
+    top:0;
+    right:56px;
+    display: flex;
+    justify-content: space-around;
+}
+.lbox{
+    width: 80px;
+    height: 50px;
+}
+.login{
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border:1px solid #cccccc;
+    box-sizing: border-box;
+    position: relative;
+    margin-top:5px;
+}
+.login img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.menu{
+    width:100px;
+    height: auto;
+    position: absolute;
+    top:45px;
+    left:0;
+    box-shadow: 0px 2px 3px 1px rgba(0,0,0,.1);
+    background: white;
+    display: none;
+}
+.menu>li{
+    width: 100%;
+    height: 20px;
+    background: white;
+    text-align: center;
+    line-height: 20px;
+    font-size: 12px;
+    margin:10px 0px;
+}
+.menu>li:hover{
+    background: #ff6700;
+}
+.menu>li:hover a{
+    color: #ffffff;
+}
+.menu>li a{
+    color: #ff6700;
+}
+.sanjiao{
+    width: 0;
+    height: 0;
+    border-top: 4px solid #ff6700;
+    border-bottom: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-left: 4px solid transparent;
+    position: absolute;
+    right:-5px;
+    top:32px;
+}
+.lbox:hover .sanjiao{
+    transform: translateY(-4px) rotate(180deg);
+    transition:  all 0.5s;
+}
+.write{
+    width: 80px;
+    height: 40px;
+    background: #ff6700;
+    border-radius: 40px;
+    line-height: 40px;
+    text-align: center;
+    margin-top:5px;
+    color: #ffffff;
+    font-family: 'iconfont';
+}
+/*banner图*/
+main{
+    width: 960px;
+    height: auto;
+    margin:0 auto;
+}
+.head{
+    width:100%;
+    height: 30px;
+}
+.lphoto{
+    width: 630px;
+    height:272px;
+    float: left;
+}
+.lphoto img{
+    width: 100%;
+    height: 100%;
+}
+.rphoto{
+    width: 330px;
+    height:272px;
+    float: left;
+}
+.tphoto{
+    width: 100%;
+    height: 136px;
+}
+.tphoto img{
+    width: 100%;
+    height: 100%;
+}
+.bottom{
+    width: 100%;
+    height: auto;
+}
+.left{
+    width: 66.67%;
+    height: auto;
+    float: left;
+}
+.right{
+    width: 33.33%;
+    height: auto;
+    float: left;
+}
+.collection{
+    width: 100%;
+    height: 100px;
+    margin-top: 20px;
+    border-bottom: 1px solid #cccccc;
+    padding-bottom: 30px;
+    margin-bottom: 20px;
+}
+.collection a{
+    color: #333333;
+}
+.subject{
+    width: 133px;
+    height: 30px;
+    border-radius: 5px;
+    float: left;
+    margin-right:20px;
+    margin-top:10px;
+    margin-bottom: 10px;
+    border:1px solid #cccccc;
+}
+.image{
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    float: left;
+    background: green;
+}
+.image img{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+.column{
+    width:100px;
+    height: 30px;
+    border-radius: 5px;
+    line-height: 30px;
+    float: left;
+    font-size: 12px;
+    margin-left: 3px;
+}
+.artical{
+    width: 100%;
+    height:170px;
+    margin-top: 10px;
+    border-bottom: 1px solid #cccccc;
+}
+.aleft{
+    width: 480px;
+    height: 100%;
+    float: left;
+    margin-bottom: 12px;
+}
+.information{
+    width: 100%;
+    height: 30px;
+}
+.information>li{
+    height: 30px;
+    float: left;
+    line-height: 30px;
+    margin-right: 10px;
+    text-align: center;
+}
+.photo img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+.name{
+    font-size: 14px;
+    color: #222222;
+}
+.time{
+    font-size: 14px;
+    color: grey;
+}
+.title{
+    width: 100%;
+    font-size: 18px;
+    font-weight: bold;
+    color: #222222;
+    line-height: 24px;
+    padding:2px 0px;
+}
+.title a{
+    color: #333;
+}
+.a-con{
+    width: 100%;
+    height: 75px;
+    font-size: 12px;
+    color: grey;
+    line-height: 18px;
+    /*padding-left: 20px;*/
+    padding-top: 5px;
+    box-sizing: border-box;
+}
+.enjoy{
+    width: 60%;
+    height: 20px;
+    /*padding-left:20px;*/
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+}
+.scan,.leave,.adimir,.price{
+    font-family: 'iconfont';
+}
+.enjoy>li{
+    height: 12px;
+    text-align: center;
+    line-height: 12px;
+    font-size: 12px;
+}
+.enjoy li a{
+    color: #333333;
+}
+.enjoy .sort{
+    height: 12px;
+    font-size: 12px;
+    padding:3px 6px;
+    border: 1px solid #ea6f5a;
+    border-radius: 4px;
+    color: #ea6f5a;
+}
+.enjoy .scan,.enjoy .leave,.enjoy .adimir,.enjoy .price,.enjoy .cang{
+    height: 20px;
+    line-height: 20px;
+}
+.enjoy .adimir{
+    font-size: 14px;
+    cursor: pointer;
+}
+.aright{
+    width: 120px;
+    height: 120px;
+    float: right;
+    margin-top: 19px;
+}
+.aright img{
+   width: 100%;
+    height: 100%;
+}
+/*右边*/
+.ranking{
+    width: 280px;
+    margin-left:40px;
+    margin-top: 20px;
+}
+.hot{
+    width: 280px;
+    margin:10px 0px;
+    height: 50px;
+}
+.hot img{
+    width: 100%;
+    height: 100%;
+}

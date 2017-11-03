@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>购物车</title>
+    <link rel="stylesheet" href="css/car.css">
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/car.js"></script>
+</head>
+<body>
+<section>
+    <table>
+        <caption>我的购物信息</caption>
+        <tr>
+            <th>编号</th>
+            <th>用户</th>
+            <th>购买的商品</th>
+            <th >单个价格</th>
+            <th >购买数量</th>
+            <th >总价格</th>
+            <th>日期</th>
+            <th>删除</th>
+            <th class="all">全选 <input type="checkbox" name="live[]"></th>
+        </tr>
+        <tr>
+            <td>001</td>
+            <td>张三</td>
+            <td>李四的文章</td>
+            <td class="price">10</td>
+            <td class="num"><input type="number" max="10" min="0" placeholder="数量"></td>
+            <td class="total"></td>
+            <td>2017-10-27</td>
+            <td><button>删除</button></td>
+            <td class="one"><input type="checkbox"></td>
+        </tr>
+        <tr>
+            <td>002</td>
+            <td>张三</td>
+            <td>李四的文章</td>
+            <td class="price">20</td>
+            <td class="num"><input type="number" max="10" min="0" placeholder="数量"></td>
+            <td class="total"></td>
+            <td>2017-10-27</td>
+            <td><button>删除</button></td>
+            <td class="one"><input type="checkbox"></td>
+        </tr>
+        <tr>
+            <td>003</td>
+            <td>张三</td>
+            <td>李四的文章</td>
+            <td class="price">30</td>
+            <td class="num"><input type="number" max="10" min="0" placeholder="数量"></td>
+            <td class="total"></td>
+            <td>2017-10-27</td>
+            <td><button>删除</button></td>
+            <td class="one"><input type="checkbox"></td>
+        </tr>
+    </table>
+    <a href="pay.html">点击这里去支付，共计<span>10元</span></a>
+</section>
+</body>
+</html>
+<!--
+<script>
+ $(function(){
+     $(".all>input").click(function(){
+         alert(1);
+         if ($(".all>input").is(:check)==true){
+             $(".one>input").is(:check).val(false);
+         }
+     })
+ })
+</script>-->

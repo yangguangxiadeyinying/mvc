@@ -1,0 +1,294 @@
+*{
+    margin:0;
+    padding:0;
+    list-style: none;
+    text-decoration: none;
+}
+header{
+    width: 100%;
+    height: 50px;
+}
+.float1{
+    width: 100%;
+    height: 50px;
+}
+.float{
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    left:0;
+    top:0;
+    border-bottom: 1px solid #cccccc;
+    background: #ffffff;
+    z-index: 9999;
+}
+.logo{
+    width: 50px;
+    height: 100%;
+    position: fixed;
+    left: 50px;
+    top:0px;
+    color: #ff6700;
+    line-height: 50px;
+    font-size: 24px;
+    text-align: center;
+    font-weight: bold;
+}
+.inside{
+    width: 960px;
+    height: 100%;
+    margin: 0 auto;
+}
+.inside .navigation,.inside .message,.inside .attention,.inside div{
+    display:block;
+    height: 100%;
+    line-height: 50px;
+    color: #ff6700;
+    text-align: center;
+    float: left;
+    margin-left: 30px;
+}
+.inside .navigation,.inside .message{
+    color: #000000;
+}
+.navigation,.attention,.message{
+    font-family: 'iconfont';
+}
+.search{
+    position: relative;
+}
+.search input{
+    width: 200px;
+    height:30px ;
+    border:1px solid #cccccc;
+    border-radius: 20px;
+    outline: none;
+    padding:2px 8px;
+    box-sizing: border-box;
+    float: left;
+    margin:10px 0px;
+}
+.search a{
+    display: block;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right:6px;
+    top:15px;
+    border-radius: 50%;
+    font-family: 'iconfont';
+    text-align: center;
+    line-height: 20px;
+}
+.r-box{
+    width: 160px;
+    height: 100%;
+    position: absolute;
+    top:0;
+    right:56px;
+    display: flex;
+    justify-content: space-around;
+}
+.lbox{
+    width: 80px;
+    height: 50px;
+}
+.login{
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border:1px solid #cccccc;
+    box-sizing: border-box;
+    position: relative;
+    margin-top:5px;
+}
+.menu{
+    width:100px;
+    height: auto;
+    position: absolute;
+    top:45px;
+    left:0;
+    box-shadow: 0px 2px 3px 1px rgba(0,0,0,.1);
+    background: white;
+    display: none;
+}
+.menu>li{
+    width: 100%;
+    height: 20px;
+    background: white;
+    text-align: center;
+    line-height: 20px;
+    font-size: 12px;
+    margin:10px 0px;
+}
+.menu>li:hover{
+    background: #ff6700;
+}
+.menu>li:hover a{
+    color: #ffffff;
+}
+.menu>li a{
+    color: #ff6700;
+}
+.sanjiao{
+    width: 0;
+    height: 0;
+    border-top: 4px solid #ff6700;
+    border-bottom: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-left: 4px solid transparent;
+    position: absolute;
+    right:-5px;
+    top:32px;
+}
+.lbox:hover .sanjiao{
+    transform: translateY(-4px) rotate(180deg);
+    transition:  all 0.5s;
+}
+.write{
+    width: 80px;
+    height: 40px;
+    background: #ff6700;
+    border-radius: 40px;
+    line-height: 40px;
+    text-align: center;
+    margin-top:5px;
+    color: #ffffff;
+    font-family: 'iconfont';
+}
+/*表头完*/
+section{
+    width: 960px;
+    height: auto;
+    margin:20px auto;
+}
+aside{
+    width: 280px;
+    height: auto;
+    float: left;
+    margin-top: 20px;
+}
+.flower-list{
+    width: 625px;
+    height: auto;
+    float: right;
+}
+.title{
+    width: 100%;
+    height: 20px;
+    color: grey;
+    margin-left: 15px;
+    line-height: 20px;
+}
+.list{
+    width: 100%;
+    height:40px;
+    padding:10px 13px;
+    box-sizing: border-box;
+}
+.list a{
+    color: #333;
+}
+.left{
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    float: left;
+}
+.toubu{
+    width:100%;
+    height: 30px;
+    margin-top:20px;
+    border-bottom: 1px solid #cccccc;
+}
+.toubu li{
+    width: 15%;
+    height: auto;
+    float: left;
+    margin-right: 20px;
+    position: relative;
+    padding-bottom: 13px;
+    text-align: center;
+}
+.toubu li a{
+    color: #222222;
+}
+.toubu li:after{
+    content:"";
+    width: 100%;
+    position: absolute;
+    border-bottom: 2px solid #646464;
+    left:0;
+    bottom:3px;
+    opacity: 0;
+}
+.toubu li:hover:after{
+   transition: all 0.5s;
+   opacity: 1;
+}
+.content{
+    width: 100%;
+    height: auto;
+}
+.content li{
+    width: 100%;
+    height: 100px;
+    position: relative;
+    margin-top: 20px;
+    border-bottom: 1px solid #cccccc;
+}
+.top{
+    width: 100%;
+    height:16px;
+    font-size: 12px;
+    color: red;
+    line-height: 16px;
+}
+.bottom{
+    width: 100%;
+    height: 100px;
+}
+.tupian{
+    width: 52px;
+    height: 52px;
+    border-radius: 3px;
+    float: left;
+}
+.tupian img{
+    width: 100%;
+    height: 100%;
+    border-radius: 3px;
+}
+.word{
+    width:440px;
+    height: 100px;
+    float: left;
+    margin-left: 10px;
+}
+.word span{
+    display: block;
+    width: 100%;
+    font-size: 12px;
+    line-height: 20px;
+}
+.word .wtitle{
+    font-size: 16px;
+    color: #222222;
+    line-height: 26px;
+}
+.button{
+    position: absolute;
+    right:40px;
+    top:30px;
+    width: 100px;
+    height: 40px;
+    border:1px solid #b2a0a0;
+    border-radius: 40px;
+    line-height: 40px;
+    text-align: center;
+    background: limegreen;
+    color: #ffffff;
+    cursor: pointer;
+}
+

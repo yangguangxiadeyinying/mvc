@@ -1,0 +1,251 @@
+*{
+    margin:0;
+    padding:0;
+    list-style: none;
+    text-decoration: none;
+}
+header{
+    width: 100%;
+    height: 50px;
+}
+.float1{
+    width: 100%;
+    height: 50px;
+}
+.float{
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    left:0;
+    top:0;
+    border-bottom: 1px solid #cccccc;
+    background: #ffffff;
+}
+.logo{
+    width: 50px;
+    height: 100%;
+    position: fixed;
+    left: 50px;
+    top:0px;
+    color: #ff6700;
+    line-height: 50px;
+    font-size: 24px;
+    text-align: center;
+    font-weight: bold;
+}
+.inside{
+    width: 960px;
+    height: 100%;
+    margin: 0 auto;
+}
+.inside .navigation,.inside .message,.inside .attention,.inside div{
+    display:block;
+    height: 100%;
+    line-height: 50px;
+    color: #ff6700;
+    text-align: center;
+    float: left;
+    margin-left: 30px;
+}
+.inside .navigation,.inside .attention{
+    color: #000000;
+}
+.navigation,.attention,.message{
+    font-family: 'iconfont';
+}
+.search{
+    position: relative;
+}
+.search input{
+    width: 200px;
+    height:30px ;
+    border:1px solid #cccccc;
+    border-radius: 20px;
+    outline: none;
+    padding:2px 8px;
+    box-sizing: border-box;
+    float: left;
+    margin:10px 0px;
+}
+.search a{
+    display: block;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right:6px;
+    top:15px;
+    border-radius: 50%;
+    font-family: 'iconfont';
+    text-align: center;
+    line-height: 20px;
+}
+.r-box{
+    width: 160px;
+    height: 100%;
+    position: absolute;
+    top:0;
+    right:56px;
+    display: flex;
+    justify-content: space-around;
+}
+.lbox{
+    width: 80px;
+    height: 50px;
+}
+.login{
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border:1px solid #cccccc;
+    box-sizing: border-box;
+    position: relative;
+    margin-top:5px;
+}
+.menu{
+    width:100px;
+    height: auto;
+    position: absolute;
+    top:45px;
+    left:0;
+    box-shadow: 0px 2px 3px 1px rgba(0,0,0,.1);
+    background: white;
+    display: none;
+}
+.menu>li{
+    width: 100%;
+    height: 20px;
+    background: white;
+    text-align: center;
+    line-height: 20px;
+    font-size: 12px;
+    margin:10px 0px;
+}
+.menu>li:hover{
+    background: #ff6700;
+}
+.menu>li:hover a{
+    color: #ffffff;
+}
+.menu>li a{
+    color: #ff6700;
+}
+.sanjiao{
+    width: 0;
+    height: 0;
+    border-top: 4px solid #ff6700;
+    border-bottom: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-left: 4px solid transparent;
+    position: absolute;
+    right:-5px;
+    top:32px;
+}
+.lbox:hover .sanjiao{
+    transform: translateY(-4px) rotate(180deg);
+    transition:  all 0.5s;
+}
+.write{
+    width: 80px;
+    height: 40px;
+    background: #ff6700;
+    border-radius: 40px;
+    line-height: 40px;
+    text-align: center;
+    margin-top:5px;
+    color: #ffffff;
+    font-family: 'iconfont';
+}
+section{
+    width:960px;
+    height: auto;
+    margin:20px auto;
+}
+/*左边*/
+.left{
+    width: 625px;
+    height: auto;
+    float: left;
+}
+.information{
+    width: 100%;
+    height: 83px;
+    margin-bottom: 20px;
+}
+.photo{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    float: left;
+}
+.photo img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.person{
+    width: 525px;
+    height: 30px;
+    float: right;
+}
+.name{
+    width: 100%;
+    height: auto;
+}
+.function{
+    width: 100%;
+    height: auto;
+}
+.function li{
+    width: 36px;
+    height: 37px;
+    padding-right:7px;
+    margin-bottom: 6px;
+    margin-right: 7px;
+    border-right: 1px solid #cccccc;
+    float: left;
+}
+.function li:last-child{
+    border-right: none;
+}
+.function li p{
+     color: #777;
+     font-size: 16px;
+ }
+.function li span{
+    display: block;
+    width: 44px;
+    color: gray;
+    font-size: 11px;
+}
+.category{
+    width: 100%;
+    height: 46px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #777777;
+}
+.category li{
+    font-size: 15px;
+    padding:13px 20px;
+    line-height: 25px;
+    float: left;
+    position: relative;
+}
+.category li a{
+    color: #969696;
+}
+.category li:after{
+     content:"";
+     width: 100%;
+     position: absolute;
+     border-bottom: 2px solid #646464;
+     left:0;
+     bottom:3px;
+     opacity: 0;
+ }
+.category li:hover:after{
+    opacity: 1;
+}
+.category li:hover a{
+    color: #646464;
+}
